@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlackPi Main Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #333333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+  }
+
+  .button:hover {
+    background-color: #555555;
+  }
+</style>
+</head>
+<body>
+  <h1>BlackPi Main Page</h1>
+  <div class="container">
+    <a class="button" href="http://blackpi:9000/">Portainer</a>
+    <a class="button" href="http://blackpi/admin/">Pi Hole</a>
+    <a class="button" href="http://blackpi:9091/">Transmission</a>
+    <a class="button" href="http://blackpi:8096/">Jellyfin</a>
+    <a class="button" href="https://www.website5.com">Website 5</a>
+  </div>
+</body>
+</html>
+
